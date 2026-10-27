@@ -17,7 +17,7 @@
 | --- | --- | --- | --- | --- |
 | 1 | Setup proyek | REQ §2, §6.1, §7 | Next.js + Tailwind jalan, token warna, repo GitHub | ☑ |
 | 2 | Data & komponen dasar | REQ §4, §6.3, §6.4 | `content/data.ts` bertipe + placeholder, `Section` & kelas tombol | ☑ |
-| 3 | Navbar, Hero, Footer | REQ FR-1, FR-2, FR-7, §6.5 | Kerangka halaman atas & bawah tampil | ☐ |
+| 3 | Navbar, Hero, Footer | REQ FR-1, FR-2, FR-7, §6.5 | Kerangka halaman atas & bawah tampil | ☑ |
 | 4 | About, Experience & Education | REQ FR-3, FR-4, §6.5 | Dua section isi tampil | ☐ |
 | 5 | Projects, Contact | REQ FR-5, FR-6, §6.5 | Ketujuh section lengkap | ☐ |
 | 6 | Konten asli, aset, SEO | REQ §5 (NFR-2, NFR-3), §6.6, §9 | Placeholder diganti, metadata & gambar siap | ☐ |
@@ -60,11 +60,11 @@
 
 **Prompt pembuka:** lihat `PROMPTS.md` → Sesi 3 (sudah termasuk node Figma yang perlu dilihat).
 
-- [ ] **T3.1** `components/Navbar.tsx` — sticky, nama kiri ke `#home`, link About/Experience/Projects (`hidden md:flex`), tombol kecil Contact ke `#contact`.
-- [ ] **T3.2** `components/Hero.tsx` — `id="home"`, h1 + tagline + intro, tombol Download CV (tab baru) & Contact Me, link LinkedIn/GitHub, foto bulat via `next/image` dengan `preload`.
-- [ ] **T3.3** Susunan ponsel Hero: foto di atas (`order-first md:order-last`), tombol `w-full md:w-auto`.
-- [ ] **T3.4** `components/Footer.tsx` — © tahun otomatis + nama, link LinkedIn/GitHub; dua baris rata tengah di ponsel.
-- [ ] **T3.5** Pasang ketiganya di `app/page.tsx` (Navbar di luar `<main>`, Footer setelahnya). Pakai foto placeholder sementara di `public/images/profile.jpg`.
+- [x] **T3.1** `components/Navbar.tsx` — sticky, nama kiri ke `#home`, link About/Experience/Projects (`hidden md:flex`), tombol kecil Contact ke `#contact`.
+- [x] **T3.2** `components/Hero.tsx` — `id="home"`, h1 + tagline + intro, tombol Download CV (tab baru) & Contact Me, link LinkedIn/GitHub, foto bulat via `next/image` dengan `preload`.
+- [x] **T3.3** Susunan ponsel Hero: foto di atas (`order-first md:order-last`), tombol `w-full md:w-auto`.
+- [x] **T3.4** `components/Footer.tsx` — © tahun otomatis + nama, link LinkedIn/GitHub; dua baris rata tengah di ponsel.
+- [x] **T3.5** Pasang ketiganya di `app/page.tsx` (Navbar di luar `<main>`, Footer setelahnya). Pakai foto placeholder sementara di `public/images/profile.jpg`.
 
 **Selesai jika:** tampil benar di lebar 360px dan 1440px; semua link keluar memakai `rel="noopener noreferrer"`.
 **Commit:** `feat: navbar, hero, dan footer`
