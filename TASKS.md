@@ -16,7 +16,7 @@
 | Sesi | Fokus | Baca | Hasil akhir | Status |
 | --- | --- | --- | --- | --- |
 | 1 | Setup proyek | REQ §2, §6.1, §7 | Next.js + Tailwind jalan, token warna, repo GitHub | ☑ |
-| 2 | Data & komponen dasar | REQ §4, §6.3, §6.4 | `content/data.ts` bertipe + placeholder, `Section` & kelas tombol | ☐ |
+| 2 | Data & komponen dasar | REQ §4, §6.3, §6.4 | `content/data.ts` bertipe + placeholder, `Section` & kelas tombol | ☑ |
 | 3 | Navbar, Hero, Footer | REQ FR-1, FR-2, FR-7, §6.5 | Kerangka halaman atas & bawah tampil | ☐ |
 | 4 | About, Experience & Education | REQ FR-3, FR-4, §6.5 | Dua section isi tampil | ☐ |
 | 5 | Projects, Contact | REQ FR-5, FR-6, §6.5 | Ketujuh section lengkap | ☐ |
@@ -45,11 +45,11 @@
 
 **Prompt pembuka:** lihat `PROMPTS.md` → Sesi 2 (sudah termasuk node Figma yang perlu dilihat).
 
-- [ ] **T2.1** Buat `content/data.ts` dengan tipe TypeScript: `Profile` (nama, tagline, intro, about, status, email, foto), `Links` (linkedin, github, cv), `Experience[]`, `Education[]`, `Achievement[]` (maks. 5), `skills: string[]`, `Project[]` (judul, deskripsi, tag, gambar, demo, repo), `serviceLine`.
-- [ ] **T2.2** Isi semua field dengan placeholder bertanda jelas (mis. `"[Full Name]"`), nama tampilan "Ivan".
-- [ ] **T2.3** Buat `components/Section.tsx`: props `id`, `title`, `alt?` (latar slate-50), `center?` (judul rata tengah + `mb-4`, untuk Contact), `children`; memakai kerangka REQ §6.3 (termasuk `scroll-mt-16`).
-- [ ] **T2.4** Buat `components/ui.ts` berisi string kelas `btnPrimary`, `btnSecondary`, `btnSmall`, `textLink`, `badge`, `tag`, `focusRing` (REQ §6.4). Tanpa library tambahan.
-- [ ] **T2.5** `app/page.tsx`: pasang `<main>` kosong yang nanti memanggil section; uji satu `Section` contoh lalu hapus lagi.
+- [x] **T2.1** Buat `content/data.ts` dengan tipe TypeScript: `Profile` (nama, tagline, intro, about, status, email, foto), `Links` (linkedin, github, cv), `Experience[]`, `Education[]`, `Achievement[]` (maks. 5), `skills: string[]`, `Project[]` (judul, deskripsi, tag, gambar, demo, repo), `serviceLine`.
+- [x] **T2.2** Isi semua field dengan placeholder bertanda jelas (mis. `"[Full Name]"`), nama tampilan "Ivan".
+- [x] **T2.3** Buat `components/Section.tsx`: props `id`, `title`, `alt?` (latar slate-50), `center?` (judul rata tengah + `mb-4`, untuk Contact), `children`; memakai kerangka REQ §6.3 (termasuk `scroll-mt-16`).
+- [x] **T2.4** Buat `components/ui.ts` berisi string kelas `btnPrimary`, `btnSecondary`, `btnSmall`, `textLink`, `badge`, `tag`, `focusRing` (REQ §6.4). Tanpa library tambahan.
+- [x] **T2.5** `app/page.tsx`: pasang `<main>` kosong yang nanti memanggil section; uji satu `Section` contoh lalu hapus lagi.
 
 **Selesai jika:** `npm run build` lolos; `data.ts` lolos type-check; tidak ada teks konten di dalam komponen.
 **Commit:** `feat: data konten bertipe dan komponen dasar`
