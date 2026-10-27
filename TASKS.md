@@ -15,7 +15,7 @@
 
 | Sesi | Fokus | Baca | Hasil akhir | Status |
 | --- | --- | --- | --- | --- |
-| 1 | Setup proyek | REQ §2, §6.1, §7 | Next.js + Tailwind jalan, token warna, repo GitHub | ☐ |
+| 1 | Setup proyek | REQ §2, §6.1, §7 | Next.js + Tailwind jalan, token warna, repo GitHub | ☑ |
 | 2 | Data & komponen dasar | REQ §4, §6.3, §6.4 | `content/data.ts` bertipe + placeholder, `Section` & kelas tombol | ☐ |
 | 3 | Navbar, Hero, Footer | REQ FR-1, FR-2, FR-7, §6.5 | Kerangka halaman atas & bawah tampil | ☐ |
 | 4 | About, Experience & Education | REQ FR-3, FR-4, §6.5 | Dua section isi tampil | ☐ |
@@ -29,12 +29,12 @@
 
 **Prompt pembuka:** lihat `PROMPTS.md` → Sesi 1 (sudah termasuk node Figma yang perlu dilihat).
 
-- [ ] **T1.1** Jalankan `npx create-next-app@latest` dengan TypeScript, Tailwind, ESLint, App Router, folder `app/` di root (tanpa `src/`).
-- [ ] **T1.2** Bersihkan isi template di `app/page.tsx` dan `app/globals.css` (sisakan `@import "tailwindcss";`).
-- [ ] **T1.3** Tambahkan `@theme` warna aksen (REQ §6.1) dan `html { scroll-behavior: smooth; }` di `globals.css`.
-- [ ] **T1.4** Di `app/layout.tsx`: pastikan font Geist Sans terpasang, `<html lang="en">`, `body` berlatar putih dengan teks `text-slate-900`, metadata sementara (`title: "Ivan — Web Developer"`).
-- [ ] **T1.5** Buat folder kosong sesuai REQ §7: `components/`, `content/`, `public/images/`.
-- [ ] **T1.6** `git init`, commit pertama, buat repo GitHub, push.
+- [x] **T1.1** Jalankan `npx create-next-app@latest` dengan TypeScript, Tailwind, ESLint, App Router, folder `app/` di root (tanpa `src/`).
+- [x] **T1.2** Bersihkan isi template di `app/page.tsx` dan `app/globals.css` (sisakan `@import "tailwindcss";`).
+- [x] **T1.3** Tambahkan `@theme` warna aksen (REQ §6.1) dan `html { scroll-behavior: smooth; }` di `globals.css`.
+- [x] **T1.4** Di `app/layout.tsx`: pastikan font Geist Sans terpasang, `<html lang="en">`, `body` berlatar putih dengan teks `text-slate-900`, metadata sementara (`title: "Ivan — Web Developer"`).
+- [x] **T1.5** Buat folder kosong sesuai REQ §7: `components/`, `content/`, `public/images/`.
+- [x] **T1.6** `git init`, commit pertama, buat repo GitHub, push.
 
 **Selesai jika:** `npm run dev` menampilkan halaman kosong tanpa error; tombol uji `bg-accent` berwarna teal; repo ada di GitHub.
 **Commit:** `chore: setup Next.js, Tailwind, dan token warna`
