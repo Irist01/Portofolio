@@ -18,7 +18,7 @@
 | 1 | Setup proyek | REQ §2, §6.1, §7 | Next.js + Tailwind jalan, token warna, repo GitHub | ☑ |
 | 2 | Data & komponen dasar | REQ §4, §6.3, §6.4 | `content/data.ts` bertipe + placeholder, `Section` & kelas tombol | ☑ |
 | 3 | Navbar, Hero, Footer | REQ FR-1, FR-2, FR-7, §6.5 | Kerangka halaman atas & bawah tampil | ☑ |
-| 4 | About, Experience & Education | REQ FR-3, FR-4, §6.5 | Dua section isi tampil | ☐ |
+| 4 | About, Experience & Education | REQ FR-3, FR-4, §6.5 | Dua section isi tampil | ☑ |
 | 5 | Projects, Contact | REQ FR-5, FR-6, §6.5 | Ketujuh section lengkap | ☐ |
 | 6 | Konten asli, aset, SEO | REQ §5 (NFR-2, NFR-3), §6.6, §9 | Placeholder diganti, metadata & gambar siap | ☐ |
 | 7 | QA & deploy | REQ §5, §10 | Lolos Definisi Selesai, live di Vercel | ☐ |
@@ -75,11 +75,11 @@
 
 **Prompt pembuka:** lihat `PROMPTS.md` → Sesi 4 (sudah termasuk node Figma yang perlu dilihat).
 
-- [ ] **T4.1** `components/About.tsx` — `Section id="about" alt`, grid `md:grid-cols-[3fr_2fr]`, paragraf, pil status, h3 Skills + badge.
-- [ ] **T4.2** `components/Experience.tsx` — sub-daftar Experience, Education, Achievements & Certifications; baris `md:grid-cols-[160px_1fr]`, `divide-y`.
-- [ ] **T4.3** Urutkan pengalaman terbaru di atas (urutan di `data.ts` sudah terbaru dulu, atau sort per periode).
-- [ ] **T4.4** Sembunyikan daftar Achievements bila array kosong; tampilkan IPK hanya bila ada.
-- [ ] **T4.5** Pasang kedua section di `app/page.tsx` setelah Hero.
+- [x] **T4.1** `components/About.tsx` — `Section id="about" alt`, grid `md:grid-cols-[3fr_2fr]`, paragraf, pil status, h3 Skills + badge.
+- [x] **T4.2** `components/Experience.tsx` — sub-daftar Experience, Education, Achievements & Certifications; baris `md:grid-cols-[160px_1fr]`, `divide-y`.
+- [x] **T4.3** Urutkan pengalaman terbaru di atas (urutan di `data.ts` sudah terbaru dulu, atau sort per periode).
+- [x] **T4.4** Sembunyikan daftar Achievements bila array kosong; tampilkan IPK hanya bila ada.
+- [x] **T4.5** Pasang kedua section di `app/page.tsx` setelah Hero.
 
 **Selesai jika:** di ponsel periode pindah ke atas judul; tidak ada logo, kartu, atau progress bar.
 **Commit:** `feat: section about dan experience`
