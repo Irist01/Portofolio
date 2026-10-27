@@ -19,7 +19,7 @@
 | 2 | Data & komponen dasar | REQ §4, §6.3, §6.4 | `content/data.ts` bertipe + placeholder, `Section` & kelas tombol | ☑ |
 | 3 | Navbar, Hero, Footer | REQ FR-1, FR-2, FR-7, §6.5 | Kerangka halaman atas & bawah tampil | ☑ |
 | 4 | About, Experience & Education | REQ FR-3, FR-4, §6.5 | Dua section isi tampil | ☑ |
-| 5 | Projects, Contact | REQ FR-5, FR-6, §6.5 | Ketujuh section lengkap | ☐ |
+| 5 | Projects, Contact | REQ FR-5, FR-6, §6.5 | Ketujuh section lengkap | ☑ |
 | 6 | Konten asli, aset, SEO | REQ §5 (NFR-2, NFR-3), §6.6, §9 | Placeholder diganti, metadata & gambar siap | ☐ |
 | 7 | QA & deploy | REQ §5, §10 | Lolos Definisi Selesai, live di Vercel | ☐ |
 
@@ -90,11 +90,11 @@
 
 **Prompt pembuka:** lihat `PROMPTS.md` → Sesi 5 (sudah termasuk node Figma yang perlu dilihat).
 
-- [ ] **T5.1** `components/ProjectCard.tsx` — screenshot `aspect-[16/10]`, judul, deskripsi, tag, link Live Demo & GitHub di dasar kartu (`mt-auto`).
-- [ ] **T5.2** `components/Projects.tsx` — `Section id="projects" alt`, grid `md:grid-cols-3 gap-6`, tepat 3 kartu dari `data.ts`.
-- [ ] **T5.3** `components/Contact.tsx` — `Section id="contact"` dengan judul "Let's Work Together" rata tengah, kalimat layanan, tombol Email Me (`mailto:`), email sebagai teks, link sosial.
-- [ ] **T5.4** Pasang keduanya di `app/page.tsx`; urutan akhir cocok dengan REQ §3.1.
-- [ ] **T5.5** Uji semua link navbar men-scroll ke section yang benar dan judul tidak tertutup navbar.
+- [x] **T5.1** `components/ProjectCard.tsx` — screenshot `aspect-[16/10]`, judul, deskripsi, tag, link Live Demo & GitHub di dasar kartu (`mt-auto`).
+- [x] **T5.2** `components/Projects.tsx` — `Section id="projects" alt`, grid `md:grid-cols-3 gap-6`, tepat 3 kartu dari `data.ts`.
+- [x] **T5.3** `components/Contact.tsx` — `Section id="contact"` dengan judul "Let's Work Together" rata tengah, kalimat layanan, tombol Email Me (`mailto:`), email sebagai teks, link sosial.
+- [x] **T5.4** Pasang keduanya di `app/page.tsx`; urutan akhir cocok dengan REQ §3.1.
+- [x] **T5.5** Uji semua link navbar men-scroll ke section yang benar dan judul tidak tertutup navbar.
 
 **Selesai jika:** ketujuh section tampil berurutan; kartu sama tinggi di desktop.
 **Commit:** `feat: section projects dan contact`
