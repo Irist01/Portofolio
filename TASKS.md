@@ -109,7 +109,7 @@
 - [ ] **T6.2** Taruh `profile.jpg`, 3 screenshot proyek, `cv.pdf` di `public/`; cek ukuran file sesuai REQ §6.6.
 - [ ] **T6.3** Lengkapi alt text semua gambar.
 - [x] **T6.4** `app/layout.tsx`: `title`, `description`, `metadataBase` (URL Vercel), Open Graph dengan `/og.png`; tambahkan favicon (`app/icon.png` atau `favicon.ico`).
-- [ ] **T6.5** Buat `public/og.png` 1200 × 630px (nama + tagline di atas latar putih/aksen).
+- [x] **T6.5** Buat `public/og.png` 1200 × 630px (nama + tagline di atas latar putih/aksen).
 
 **Selesai jika:** tidak ada placeholder tersisa; `npm run build` lolos.
 **Commit:** `content: konten asli, aset, dan metadata SEO`

@@ -3,7 +3,7 @@
 > Status per 28 Oktober 2026, commit `eecd8e4`.
 > Sesi 1–5 selesai. Sesi 6 sebagian. Sesi 7 sebagian.
 
-## A. Aset yang belum ada (butuh file dari Ivan) — sisa T6.2, T6.5
+## A. Aset yang belum ada (butuh file dari Ivan) — sisa T6.2
 
 | File | Dipakai di | Akibat bila kosong |
 | --- | --- | --- |
@@ -12,9 +12,8 @@
 | `public/images/project-2.jpg` | kartu proyek 2 | gambar rusak |
 | `public/images/project-3.jpg` | kartu proyek 3 | gambar rusak |
 | `public/images/profile.jpg` | foto Hero | **ada tapi placeholder 631 byte**, harus diganti foto asli |
-| `public/og.png` (1200 × 630) | Open Graph di `app/layout.tsx` | preview link di WhatsApp/LinkedIn kosong |
 
-`app/favicon.ico` sudah ada.
+`app/favicon.ico` sudah ada. OG image **tidak lagi butuh file** — digenerate otomatis oleh `app/opengraph-image.tsx` dari nama + tagline di `data.ts` (T6.5 selesai).
 
 ## B. Konten yang masih placeholder — T6.1 (ditunda atas permintaan)
 
@@ -27,6 +26,7 @@ Sudah diisi asli:
 
 Masih placeholder:
 - `profile.intro` — ikut dipakai sebagai `description` & Open Graph description, jadi SEO belum benar sampai ini diisi
+- `profile.tagline` sudah asli, jadi OG image sudah tampil benar
 - `profile.about`
 - `education[0].degree`
 - seluruh `experience[]`
@@ -56,7 +56,7 @@ Sudah lolos: **T7.2** (semantik `header`/`main`/`footer`, satu `h1`, ikon dekora
 
 ## E. Urutan paling masuk akal untuk melanjutkan
 
-1. Isi `content/data.ts` (T6.1) + taruh semua aset di `public/` (T6.2, T6.3, T6.5).
+1. Isi `content/data.ts` (T6.1) + taruh semua aset di `public/` (T6.2, T6.3).
 2. Deploy ke Vercel (T7.5). `metadataBase` otomatis terisi dari env Vercel, tidak perlu diedit.
 3. QA di browser: T7.1, T7.3.
 4. Centang REQ §10 dan tabel sesi di `TASKS.md` (T7.6).

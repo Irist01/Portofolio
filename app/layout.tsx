@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     url: "/",
     title,
     description: profile.intro,
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: title }],
   },
 };
 
