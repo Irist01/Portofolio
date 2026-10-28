@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { profile } from "@/content/data";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -7,8 +8,24 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+// Di Vercel URL produksi datang dari env; lokal pakai localhost.
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : "http://localhost:3000";
+
+const title = `${profile.fullName} — ${profile.tagline}`;
+
 export const metadata: Metadata = {
-  title: "Ivan — Web Developer",
+  metadataBase: new URL(siteUrl),
+  title,
+  description: profile.intro,
+  openGraph: {
+    type: "website",
+    url: "/",
+    title,
+    description: profile.intro,
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: title }],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

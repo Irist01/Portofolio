@@ -108,7 +108,7 @@
 - [ ] **T6.1** Ganti semua placeholder di `data.ts` dengan konten asli dari Ivan (checklist REQ §9). Cari sisa `"["` untuk memastikan tidak ada placeholder tertinggal.
 - [ ] **T6.2** Taruh `profile.jpg`, 3 screenshot proyek, `cv.pdf` di `public/`; cek ukuran file sesuai REQ §6.6.
 - [ ] **T6.3** Lengkapi alt text semua gambar.
-- [ ] **T6.4** `app/layout.tsx`: `title`, `description`, `metadataBase` (URL Vercel), Open Graph dengan `/og.png`; tambahkan favicon (`app/icon.png` atau `favicon.ico`).
+- [x] **T6.4** `app/layout.tsx`: `title`, `description`, `metadataBase` (URL Vercel), Open Graph dengan `/og.png`; tambahkan favicon (`app/icon.png` atau `favicon.ico`).
 - [ ] **T6.5** Buat `public/og.png` 1200 × 630px (nama + tagline di atas latar putih/aksen).
 
 **Selesai jika:** tidak ada placeholder tersisa; `npm run build` lolos.
@@ -123,7 +123,7 @@
 - [ ] **T7.1** Cek tampilan di lebar 360, 768, dan 1440px (DevTools): tidak ada scroll horizontal, teks terpotong, atau elemen bertumpuk.
 - [ ] **T7.2** Cek aksesibilitas dasar: satu `h1`, urutan heading, fokus keyboard terlihat dengan Tab, ikon dekoratif `aria-hidden`.
 - [ ] **T7.3** Klik semua tombol & link: Download CV, Email Me, LinkedIn, GitHub, Live Demo, link navbar.
-- [ ] **T7.4** `npm run lint` dan `npm run build` tanpa error.
+- [x] **T7.4** `npm run lint` dan `npm run build` tanpa error.
 - [ ] **T7.5** Hubungkan repo ke Vercel, deploy, buka URL live di ponsel asli.
 - [ ] **T7.6** Centang REQ §10 (Definisi Selesai) dan ubah status semua sesi di tabel ringkasan menjadi ☑.
 
