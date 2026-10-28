@@ -20,7 +20,10 @@ export default function Hero() {
           />
         </div>
         <div>
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+          <p className="text-base font-medium text-slate-600 md:text-lg">
+            {profile.greeting}
+          </p>
+          <h1 className="mt-2 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
             {profile.fullName}
           </h1>
           <p className="mt-3 text-lg font-medium text-accent md:text-xl">

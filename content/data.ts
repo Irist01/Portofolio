@@ -3,6 +3,8 @@
 export type Profile = {
   /** Nama tampilan pendek (navbar, footer) */
   name: string;
+  /** Baris kecil di atas h1 Hero */
+  greeting: string;
   /** Nama lengkap untuk h1 di Hero */
   fullName: string;
   tagline: string;
@@ -54,21 +56,22 @@ export type Project = {
 };
 
 export const profile: Profile = {
-  name: "Ivan",
-  fullName: "[Full Name]",
-  tagline: "Web Developer | Fresh Graduate",
+  name: "Irist",
+  greeting: "Hi there, I am",
+  fullName: "Ivan Christian Santoso",
+  tagline: "Software Engineer | Fresh Graduate",
   intro:
     "[One or two sentences introducing who you are and what you build.]",
   about:
     "[Three to five sentences about your background, what you are interested in, and how you like to work. Mention the kind of work you are looking for and what you bring to a team.]",
   status: "Open to full-time roles & freelance projects",
-  email: "[you@example.com]",
-  photo: { src: "/images/profile.jpg", alt: "[Full Name]" },
+  email: "ivancs679@gmail.com",
+  photo: { src: "/images/profile.jpg", alt: "Ivan Christian Santoso" },
 };
 
 export const links: Links = {
-  linkedin: "https://www.linkedin.com/in/[username]",
-  github: "https://github.com/[username]",
+  linkedin: "https://www.linkedin.com/in/ivan-christian-santoso/",
+  github: "https://github.com/Irist01",
   cv: "/cv.pdf",
 };
 
@@ -97,10 +100,10 @@ export const experience: Experience[] = [
 
 export const education: Education[] = [
   {
-    institution: "[University Name]",
+    institution: "Bina Nusantara University",
     degree: "[Bachelor of Computer Science]",
-    period: "2020 – 2024",
-    gpa: "[3.50 / 4.00]",
+    period: "2021 – 2025",
+    gpa: "3.15 / 4.00",
   },
 ];
 
