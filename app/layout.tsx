@@ -11,7 +11,7 @@ const geistSans = Geist({
 // Di Vercel URL produksi datang dari env; lokal pakai localhost.
 const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "http://localhost:3000";
+  : process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 const title = `${profile.fullName} — ${profile.tagline}`;
 
