@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description: profile.intro,
-  icons: { icon: `${basePath}/icon.png` },
+  icons: { icon: `${basePath}/images/icon.png` },
   openGraph: {
     type: "website",
     url: "/",
