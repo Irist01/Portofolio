@@ -1,4 +1,5 @@
 import Section from "@/components/Section";
+import { textLink } from "@/components/ui";
 import { achievements, education, experience } from "@/content/data";
 
 const label = "mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500";
@@ -52,7 +53,20 @@ export default function Experience() {
           <ul className={list}>
             {achievements.map((item) => (
               <li key={`${item.title}-${item.year}`} className="py-3">
-                <span className="font-medium text-slate-900">{item.title}</span>{" "}
+                {item.url ? (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={textLink}
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <span className="font-medium text-slate-900">
+                    {item.title}
+                  </span>
+                )}{" "}
                 <span className="text-sm text-slate-500">
                   {item.issuer} · {item.year}
                 </span>

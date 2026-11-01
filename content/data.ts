@@ -45,6 +45,8 @@ export type Achievement = {
   title: string;
   issuer: string;
   year: string;
+  /** Halaman verifikasi sertifikat; bila kosong judul tampil sebagai teks biasa. */
+  url?: string;
 };
 
 export type Project = {
@@ -80,22 +82,11 @@ export const links: Links = {
 /** Terbaru di atas. Magang, freelance, asisten lab, dan organisasi masuk daftar yang sama. */
 export const experience: Experience[] = [
   {
-    title: "[Position Title]",
-    organization: "[Organization]",
-    period: "Jun 2024 – Aug 2024",
+    title: "Coding Instructor (Internship)",
+    organization: "KodeKiddo · Bekasi, Indonesia",
+    period: "Feb 2024 – Feb 2025",
     points: [
-      "[Achievement with a concrete result]",
-      "[Second achievement or responsibility]",
-      "[Third point (optional)]",
-    ],
-  },
-  {
-    title: "[Position Title]",
-    organization: "[Organization]",
-    period: "Sep 2023 – May 2024",
-    points: [
-      "[Achievement with a concrete result]",
-      "[Second achievement or responsibility]",
+      "Delivered beginner-to-intermediate coding lessons in Scratch, Python, HTML, CSS, JavaScript, game development, and MIT App Inventor to children and teenagers.",
     ],
   },
 ];
@@ -115,6 +106,7 @@ export const achievements: Achievement[] = [
     title: "Belajar Fundamental Analisis Data (Data Analysis Fundamentals)",
     issuer: "Dicoding Indonesia",
     year: "Oct 2026",
+    url: "https://www.dicoding.com/certificates/QLZ9NVO3DZ5D",
   },
 ];
 
