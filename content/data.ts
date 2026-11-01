@@ -21,6 +21,7 @@ export type Profile = {
 export type Links = {
   linkedin: string;
   github: string;
+  instagram: string;
   cv: string;
 };
 
@@ -61,9 +62,9 @@ export const profile: Profile = {
   fullName: "Ivan Christian Santoso",
   tagline: "Software Engineer | Fresh Graduate",
   intro:
-    "[One or two sentences introducing who you are and what you build.]",
+    "A Computer Science graduate who builds web applications and teaches people to code. I am looking for junior software engineering, frontend, or technical education roles.",
   about:
-    "[Three to five sentences about your background, what you are interested in, and how you like to work. Mention the kind of work you are looking for and what you bring to a team.]",
+    "I am a Computer Science graduate from BINUS University. As a coding instructor I taught Python, Scratch, HTML, CSS, JavaScript, game development, and MIT App Inventor to children and teenagers, which is where I learned to explain technical ideas plainly. On team projects I worked as a UI/UX designer and frontend developer, including a mental health mood-tracking web application. I am now moving into data: I am certified in data analysis fundamentals and work with Python to clean, analyse, and visualise data, with machine learning as the next step. I am based in Bekasi, Indonesia, and open to onsite, hybrid, and remote work.",
   status: "Open to full-time roles & freelance projects",
   email: "ivancs679@gmail.com",
   photo: { src: "/images/profile.jpg", alt: "Ivan Christian Santoso" },
@@ -72,6 +73,7 @@ export const profile: Profile = {
 export const links: Links = {
   linkedin: "https://www.linkedin.com/in/ivan-christian-santoso/",
   github: "https://github.com/Irist01",
+  instagram: "https://www.instagram.com/ivanchristian3142/",
   cv: "/cv.pdf",
 };
 
@@ -110,13 +112,14 @@ export const education: Education[] = [
 /** Maks. 5 baris. Bila kosong, section Achievements disembunyikan. */
 export const achievements: Achievement[] = [
   {
-    title: "[Achievement or Certification Title]",
-    issuer: "[Issuing Organization]",
-    year: "2024",
+    title: "Belajar Fundamental Analisis Data (Data Analysis Fundamentals)",
+    issuer: "Dicoding Indonesia",
+    year: "Oct 2026",
   },
 ];
 
 export const skills: string[] = [
+  "Python",
   "React",
   "Next.js",
   "TypeScript",

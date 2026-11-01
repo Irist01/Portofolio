@@ -4,6 +4,7 @@ import { links, profile } from "@/content/data";
 const socials = [
   { href: links.linkedin, label: "LinkedIn" },
   { href: links.github, label: "GitHub" },
+  { href: links.instagram, label: "Instagram" },
 ];
 
 export default function Footer() {

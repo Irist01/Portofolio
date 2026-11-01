@@ -34,6 +34,14 @@ export default function Contact() {
           >
             GitHub
           </a>
+          <a
+            href={links.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={textLink}
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </Section>
