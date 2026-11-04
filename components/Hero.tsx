@@ -17,7 +17,7 @@ export default function Hero() {
             width={440}
             height={440}
             priority
-            className="size-60 rounded-full object-cover ring-1 ring-slate-200 md:size-72 lg:size-[400px]"
+            className="size-60 rounded-full object-cover ring-1 ring-slate-200 md:size-72 lg:size-80 xl:size-[400px]"
           />
         </div>
         <div>
@@ -35,7 +35,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
             <a
-              href={links.cv}
+              href={asset(links.cv)}
               target="_blank"
               rel="noopener noreferrer"
               className={`${btnPrimary} w-full md:w-auto`}

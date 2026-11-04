@@ -94,7 +94,7 @@ export const experience: Experience[] = [
 export const education: Education[] = [
   {
     institution: "Bina Nusantara University",
-    degree: "[Bachelor of Computer Science]",
+    degree: "Bachelor of Computer Science",
     period: "2021 – 2025",
     gpa: "3.15 / 4.00",
   },
@@ -112,6 +112,8 @@ export const achievements: Achievement[] = [
 
 export const skills: string[] = [
   "Python",
+  "Pandas",
+  "Matplotlib",
   "React",
   "Next.js",
   "TypeScript",
@@ -155,4 +157,4 @@ export const projects: Project[] = [
 
 /** Satu kalimat layanan di section Contact. */
 export const serviceLine =
-  "I take on landing page and small-business website projects.";
+  "I'm open to junior software engineering, frontend, and technical education roles — and freelance web projects.";

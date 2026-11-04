@@ -11,6 +11,12 @@ const hasFile = (src: string) =>
   fs.existsSync(path.join(process.cwd(), "public", src));
 
 export default function ProjectCard({ project }: { project: Project }) {
+  // canParse menyaring yang kosong dan rusak, tapi kurung siku di dalam path
+  // (".../[username]/...") tetap lolos — konvensi data.ts memakai [ ] untuk placeholder.
+  const real = (url: string) => URL.canParse(url) && !url.includes("[");
+  const demo = real(project.demo) ? project.demo : null;
+  const repo = real(project.repo) ? project.repo : null;
+
   return (
     <article className="flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white">
       {hasFile(project.image.src) ? (
@@ -40,24 +46,30 @@ export default function ProjectCard({ project }: { project: Project }) {
             </li>
           ))}
         </ul>
-        <div className="mt-auto flex gap-4 pt-5 text-sm">
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={textLink}
-          >
-            Live Demo <span aria-hidden>↗</span>
-          </a>
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={textLink}
-          >
-            GitHub <span aria-hidden>↗</span>
-          </a>
-        </div>
+        {(demo || repo) && (
+          <div className="mt-auto flex gap-4 pt-5 text-sm">
+            {demo && (
+              <a
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={textLink}
+              >
+                Live Demo <span aria-hidden>↗</span>
+              </a>
+            )}
+            {repo && (
+              <a
+                href={repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={textLink}
+              >
+                GitHub <span aria-hidden>↗</span>
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </article>
   );
