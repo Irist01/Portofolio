@@ -9,7 +9,7 @@ export const btnPrimary = `inline-flex h-12 items-center justify-center gap-2 ro
 
 export const btnSecondary = `inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-6 text-base font-semibold text-slate-900 transition-colors hover:bg-slate-100 ${focusRing}`;
 
-export const btnSmall = `inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-accent px-5 text-base font-semibold text-white transition-colors hover:bg-accent-dark ${focusRing}`;
+export const btnSmall = `inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-accent px-5 text-base font-semibold text-white transition-colors hover:bg-accent-dark ${focusRing}`;
 
 export const textLink = `font-medium text-accent underline-offset-4 hover:underline ${focusRing}`;
 

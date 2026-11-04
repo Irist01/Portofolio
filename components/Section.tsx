@@ -25,7 +25,7 @@ export default function Section({
       <div className={container}>
         <h2
           className={`text-3xl font-bold tracking-tight text-slate-900 md:text-[2.5rem] ${
-            center ? "mb-4 text-center" : "mb-8 md:mb-12"
+            center ? "mb-5 text-center md:mb-6" : "mb-8 md:mb-12"
           }`}
         >
           {title}

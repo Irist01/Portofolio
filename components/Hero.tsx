@@ -7,9 +7,9 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="scroll-mt-20 bg-white py-12 md:py-16 lg:flex lg:min-h-[calc(100svh-5rem)] lg:items-start"
+      className="scroll-mt-20 bg-white pt-12 pb-16 md:pt-16 md:pb-24 lg:pt-20 lg:pb-28"
     >
-      <div className={`${container} grid gap-10 md:grid-cols-[1fr_auto] md:items-center md:gap-16`}>
+      <div className={`${container} grid gap-10 md:grid-cols-[1fr_auto] md:items-center md:gap-14 lg:gap-20`}>
         <div className="order-first md:order-last">
           <Image
             src={asset(profile.photo.src)}
@@ -24,16 +24,16 @@ export default function Hero() {
           <p className="text-base font-medium text-slate-600 md:text-lg">
             {profile.greeting}
           </p>
-          <h1 className="mt-2 text-[2.5rem] font-bold tracking-tight text-slate-900 md:text-6xl">
+          <h1 className="mt-2 text-[2.5rem] font-bold tracking-tight text-slate-900 md:mt-3 md:text-6xl">
             {profile.fullName}
           </h1>
-          <p className="mt-3 text-xl font-medium text-accent md:text-2xl">
+          <p className="mt-3 text-xl font-medium text-accent md:mt-4 md:text-2xl">
             {profile.tagline}
           </p>
-          <p className="mt-4 max-w-xl text-base text-slate-600 md:text-lg">
+          <p className="mt-4 max-w-xl text-base text-slate-600 md:mt-5 md:text-lg">
             {profile.intro}
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
             <a
               href={links.cv}
               target="_blank"
@@ -46,7 +46,7 @@ export default function Hero() {
               Contact Me
             </a>
           </div>
-          <div className="mt-6 flex gap-6">
+          <div className="mt-6 flex gap-6 md:mt-8">
             <a
               href={links.linkedin}
               target="_blank"

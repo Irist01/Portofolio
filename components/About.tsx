@@ -16,7 +16,7 @@ export default function About() {
           </p>
         </div>
         <div>
-          <h3 className="mb-4 text-base font-semibold text-slate-900">
+          <h3 className="mb-4 text-lg font-semibold text-slate-900 md:text-xl">
             Skills
           </h3>
           <ul className="flex flex-wrap gap-2">
