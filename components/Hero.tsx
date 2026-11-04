@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-5xl gap-10 px-4 md:grid-cols-[1fr_auto] md:items-center md:gap-16 md:px-6">
         <div className="order-first md:order-last">
           <Image
-            src={profile.photo.src}
+            src={`${process.env.BASE_PATH ?? ""}${profile.photo.src}`}
             alt={profile.photo.alt}
             width={288}
             height={288}

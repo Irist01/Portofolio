@@ -69,7 +69,7 @@ export const profile: Profile = {
     "I am a Computer Science graduate from BINUS University. As a coding instructor I taught Python, Scratch, HTML, CSS, JavaScript, game development, and MIT App Inventor to children and teenagers, which is where I learned to explain technical ideas plainly. On team projects I worked as a UI/UX designer and frontend developer, including a mental health mood-tracking web application. I am now moving into data: I am certified in data analysis fundamentals and work with Python to clean, analyse, and visualise data, with machine learning as the next step. I am based in Bekasi, Indonesia, and open to onsite, hybrid, and remote work.",
   status: "Open to full-time roles & freelance projects",
   email: "ivancs679@gmail.com",
-  photo: { src: "/images/profile.jpg", alt: "Ivan Christian Santoso" },
+  photo: { src: "/images/profile_1.jpg", alt: "Ivan Christian Santoso" },
 };
 
 export const links: Links = {
