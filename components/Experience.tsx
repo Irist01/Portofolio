@@ -2,9 +2,9 @@ import Section from "@/components/Section";
 import { textLink } from "@/components/ui";
 import { achievements, education, experience } from "@/content/data";
 
-const label = "mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500";
+const label = "mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500 md:text-sm";
 const list = "divide-y divide-slate-200 border-t border-slate-200";
-const row = "grid gap-1 py-6 md:grid-cols-[160px_1fr] md:gap-8";
+const row = "grid gap-1 py-6 md:grid-cols-[200px_1fr] md:gap-8";
 const period = "text-sm text-slate-500";
 
 export default function Experience() {
@@ -17,7 +17,9 @@ export default function Experience() {
           <li key={`${item.organization}-${item.period}`} className={row}>
             <p className={period}>{item.period}</p>
             <div>
-              <h4 className="font-semibold text-slate-900">{item.title}</h4>
+              <h4 className="text-lg font-semibold text-slate-900 md:text-xl">
+                {item.title}
+              </h4>
               <p className="text-slate-600">{item.organization}</p>
               <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-600">
                 {item.points.map((point) => (
@@ -35,7 +37,7 @@ export default function Experience() {
           <li key={`${item.institution}-${item.period}`} className={row}>
             <p className={period}>{item.period}</p>
             <div>
-              <h4 className="font-semibold text-slate-900">
+              <h4 className="text-lg font-semibold text-slate-900 md:text-xl">
                 {item.institution}
               </h4>
               <p className="text-slate-600">{item.degree}</p>

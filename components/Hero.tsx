@@ -1,32 +1,33 @@
 import Image from "next/image";
-import { btnPrimary, btnSecondary, textLink } from "@/components/ui";
+import { btnPrimary, btnSecondary, container, textLink } from "@/components/ui";
+import { asset } from "@/lib/asset";
 import { links, profile } from "@/content/data";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="scroll-mt-16 bg-white py-16 md:py-28"
+      className="scroll-mt-16 bg-white py-16 md:py-20 lg:flex lg:min-h-[calc(100svh-4rem)] lg:items-center"
     >
-      <div className="mx-auto grid max-w-5xl gap-10 px-4 md:grid-cols-[1fr_auto] md:items-center md:gap-16 md:px-6">
+      <div className={`${container} grid gap-10 md:grid-cols-[1fr_auto] md:items-center md:gap-16`}>
         <div className="order-first md:order-last">
           <Image
-            src={`${process.env.BASE_PATH ?? ""}${profile.photo.src}`}
+            src={asset(profile.photo.src)}
             alt={profile.photo.alt}
-            width={288}
-            height={288}
+            width={440}
+            height={440}
             priority
-            className="size-36 rounded-full object-cover ring-1 ring-slate-200 md:size-72"
+            className="size-60 rounded-full object-cover ring-1 ring-slate-200 md:size-72 lg:size-[400px]"
           />
         </div>
         <div>
           <p className="text-base font-medium text-slate-600 md:text-lg">
             {profile.greeting}
           </p>
-          <h1 className="mt-2 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+          <h1 className="mt-2 text-[2.5rem] font-bold tracking-tight text-slate-900 md:text-6xl">
             {profile.fullName}
           </h1>
-          <p className="mt-3 text-lg font-medium text-accent md:text-xl">
+          <p className="mt-3 text-xl font-medium text-accent md:text-2xl">
             {profile.tagline}
           </p>
           <p className="mt-4 max-w-xl text-base text-slate-600 md:text-lg">

@@ -1,3 +1,5 @@
+import { container } from "@/components/ui";
+
 type SectionProps = {
   id: string;
   title: string;
@@ -18,11 +20,11 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`scroll-mt-16 py-16 md:py-24 ${alt ? "bg-slate-50" : "bg-white"}`}
+      className={`scroll-mt-16 py-20 md:py-32 ${alt ? "bg-slate-50" : "bg-white"}`}
     >
-      <div className="mx-auto max-w-5xl px-4 md:px-6">
+      <div className={container}>
         <h2
-          className={`text-2xl font-bold tracking-tight text-slate-900 md:text-3xl ${
+          className={`text-3xl font-bold tracking-tight text-slate-900 md:text-[2.5rem] ${
             center ? "mb-4 text-center" : "mb-8 md:mb-12"
           }`}
         >

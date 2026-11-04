@@ -1,4 +1,4 @@
-import { focusRing } from "@/components/ui";
+import { container, focusRing } from "@/components/ui";
 import { links, profile } from "@/content/data";
 
 const socials = [
@@ -10,7 +10,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 text-sm text-slate-500 md:flex-row md:justify-between md:gap-0 md:px-6">
+      <div className={`${container} flex flex-col items-center gap-4 py-8 text-sm text-slate-500 md:flex-row md:justify-between md:gap-0`}>
         <p>
           © {new Date().getFullYear()} {profile.name}
         </p>
