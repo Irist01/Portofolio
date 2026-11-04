@@ -20,7 +20,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`scroll-mt-16 py-20 md:py-32 ${alt ? "bg-slate-50" : "bg-white"}`}
+      className={`scroll-mt-20 py-20 md:py-32 ${alt ? "bg-slate-50" : "bg-white"}`}
     >
       <div className={container}>
         <h2

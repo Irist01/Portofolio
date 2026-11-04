@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="scroll-mt-16 bg-white py-16 md:py-20 lg:flex lg:min-h-[calc(100svh-4rem)] lg:items-center"
+      className="scroll-mt-20 bg-white py-12 md:py-16 lg:flex lg:min-h-[calc(100svh-5rem)] lg:items-start"
     >
       <div className={`${container} grid gap-10 md:grid-cols-[1fr_auto] md:items-center md:gap-16`}>
         <div className="order-first md:order-last">

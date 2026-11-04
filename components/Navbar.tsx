@@ -10,10 +10,10 @@ const navLinks = [
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white">
-      <nav className={`${container} flex h-16 items-center justify-between`}>
+      <nav className={`${container} flex h-20 items-center justify-between`}>
         <a
           href="#home"
-          className={`text-lg font-semibold tracking-tight text-slate-900 ${focusRing}`}
+          className={`text-xl font-semibold tracking-tight text-slate-900 ${focusRing}`}
         >
           {profile.name}
         </a>
