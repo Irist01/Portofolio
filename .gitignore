@@ -43,6 +43,7 @@ next-env.d.ts
 # dokumen kerja/prompt internal — jangan dipush
 /CLAUDE.md
 /AGENTS.md
+/MEMORY.md
 /PRD.md
 /PROMPTS.md
 /REQUIREMENTS.md
